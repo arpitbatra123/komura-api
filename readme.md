@@ -8,9 +8,9 @@ It fetches the data of books you've read and reviewed on goodreads and reformats
 
 ## How to use this API?
 
-- Read and review some books on goodreads.
+- Read and review some books on goodreads. 🤷
 - Get a goodreads api key from [here](https://www.goodreads.com/api/keys).
-- Put that api key into a .env in the root of this project like this:
+- Put that api key into an `.env` file in the root of this project like this:
 
 ```
 GOODREADS_KEY=<your-key-here>
@@ -38,4 +38,5 @@ GOODREADS_KEY=<your-key-here>
 ```
 
 ## Built with
+
 - The [fastify](https://github.com/fastify) framework.
