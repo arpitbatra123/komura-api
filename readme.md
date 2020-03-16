@@ -15,9 +15,10 @@ It fetches the data of books you've read and reviewed on goodreads and reformats
 ```
 GOODREADS_KEY=<your-key-here>
 ```
+
 - Install project's dependencies by running `npm i`
-- Start the server by running `npm run dev`
-- Send a GET request to `http://localhost:3000`
+- Start the server by running `npx now dev`
+- Send a `GET` request to `http://localhost:3000/api`
 - You'll get something like this as the response:
 
 ```json
@@ -34,9 +35,13 @@ GOODREADS_KEY=<your-key-here>
             }
         },
     ]
-}
-```
+```    
+
+## Deploying to zeit now
+- Add the goodreads api key as a secret by running `now secret add goodreads_key <your-key>`
+- Deploy to zeit by running `now -e goodreads_key=@goodreads_key --prod` ( omit --prod if you want to do a test deployment)}
 
 ## Built with
 
-- The [fastify](https://github.com/fastify) framework.
+- [zeit now](https://zeit.co/)
+- blood, sweat and tears
