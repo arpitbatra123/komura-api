@@ -39,7 +39,7 @@ goodreads_key=<your-key-here>
 
 ## Deploying to zeit now
 - Add the goodreads api key as a secret by running `now secret add goodreads_key <your-key>`
-- Deploy to zeit by running `now -e goodreads_key=@goodreads_key --prod` ( omit --prod if you want to do a test deployment)}
+- Deploy to zeit by running `now --prod`
 
 ## Built with
 
