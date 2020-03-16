@@ -13,7 +13,7 @@ It fetches the data of books you've read and reviewed on goodreads and reformats
 - Put that api key into an `.env` file in the root of this project like this:
 
 ```
-GOODREADS_KEY=<your-key-here>
+goodreads_key=<your-key-here>
 ```
 
 - Install project's dependencies by running `npm i`
