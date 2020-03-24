@@ -17,6 +17,7 @@ goodreads_key=<your-key-here>
 ```
 
 - Install project's dependencies by running `npm i`
+- Add key to now secrets by running `now secret add goodreads_key your_key_here`
 - Start the server by running `npx now dev`
 - Send a `GET` request to `http://localhost:3000/api`
 - You'll get something like this as the response:
