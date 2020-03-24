@@ -38,8 +38,7 @@ goodreads_key=<your-key-here>
 ```    
 
 ## Deploying to zeit now
-- Add the goodreads api key as a secret by running `now secret add goodreads_key <your-key>`
-- Deploy to zeit by running `now --prod`
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/arpitbatra123/betterreads)
 
 ## Built with
 
