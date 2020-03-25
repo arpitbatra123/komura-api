@@ -1,9 +1,9 @@
 require('dotenv').config();
-const {getReviews} = require('./_api-service');
+const { getReviews } = require('./_api-service');
 
 module.exports = async (req, res) => {
   const reviewData = await getReviews();
   return res.send({
-    data: reviewData,
+    data: reviewData
   });
 };
