@@ -14,8 +14,7 @@ module.exports = {
         compact: true
       });
 
-      const reviews = JSON.parse(goodreadsResponseJSON).GoodreadsResponse
-        .reviews.review;
+      const reviews = JSON.parse(goodreadsResponseJSON).GoodreadsResponse.reviews.review;
 
       const bookDetails = reviews.map((review) => {
         return {
