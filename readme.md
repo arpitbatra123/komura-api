@@ -17,8 +17,8 @@ goodreads_key=<your-key-here>
 ```
 
 - Install project's dependencies by running `npm i`
-- Add key to now secrets by running `npx now secret add goodreads_key your_key_here`
-- Start the server by running `npx now dev`
+- Add key to vercel secrets by running `npx vercel secret add goodreads_key your_key_here`
+- Start the server by running `npm run serve`
 - Send a `GET` request to `http://localhost:3000/api`
 - You'll get something like this as the response:
 
@@ -38,11 +38,11 @@ goodreads_key=<your-key-here>
     ]
 ```
 
-## Deploying to zeit now
+## Deploying to vercel now
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/arpitbatra123/betterreads)
+[![Deploy with Vercel Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/arpitbatra123/betterreads)
 
 ## Built with
 
-- [zeit now](https://zeit.co/)
-- blood, sweat and tears
+- [vercel now](https://vercel.com/)
+- blood, sweat and tears (not the BTS album)
