@@ -24,18 +24,19 @@ goodreads_key=<your-key-here>
 
 ```json
 {
-    "data": [
-        {
-            "book": {
-                "title": "The Google Story: Inside the Hottest Business, Media, and Technology Success of Our Time",
-                "isbn": "9780553383669"
-            },
-            "review": {
-                "body": "The book starts out really great with the intriguing story of the utter genius that the google founders possessed and the kind of hard work they did through which they turned a wild thought to the money making machine that google today has become.Google’s keen focus for innovation and the brilliant business acumen of the founders fascinated me a lot. The chapter on how google hired a chef via a competition to help make healthy food for google employees was the one that I enjoyed a lot.The middle sections of the book turn a little boring in my opinion. The book’s ending is also abrupt and thus the book does not feel complete. An average read. ",
-                "rating": "3"
-            }
-        },
-    ]
+  "data": [
+    {
+      "book": {
+        "title": "The Google Story: Inside the Hottest Business, Media, and Technology Success of Our Time",
+        "isbn": "9780553383669"
+      },
+      "review": {
+        "body": "The book starts out really great with the intriguing story of the utter genius that the google founders possessed and the kind of hard work they did through which they turned a wild thought to the money making machine that google today has become.Google’s keen focus for innovation and the brilliant business acumen of the founders fascinated me a lot. The chapter on how google hired a chef via a competition to help make healthy food for google employees was the one that I enjoyed a lot.The middle sections of the book turn a little boring in my opinion. The book’s ending is also abrupt and thus the book does not feel complete. An average read. ",
+        "rating": "3"
+      }
+    }
+  ]
+}
 ```
 
 ## Deploying to vercel now
