@@ -20,12 +20,14 @@ module.exports = {
         return {
           book: {
             title: review.book.title._text,
-            isbn: review.book.isbn13._text
+            isbn: review.book.isbn13._text,
+            link: review.book.link._text,
           },
           review: {
-            body: striptags(review.body._cdata),
+            body: striptags(review.body._cdata, '<br>'),
             url: review.url._text,
-            rating: review.rating._text
+            rating: review.rating._text,
+            date_read: review.read_at._text
           }
         };
       });
