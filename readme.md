@@ -1,6 +1,6 @@
-# Betterreads
+# komura-api
 
-Goodreads has a bad API, so I had to build my own abstraction on top of it.
+This is an api I build for showing books from goodreads in the personal digital [library](https://arpit.tk/komura) over at my website. 
 
 ## What does this API do?
 
@@ -41,9 +41,9 @@ goodreads_key=<your-key-here>
 
 ## Deploying to vercel now
 
-[![Deploy with Vercel Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/arpitbatra123/betterreads)
+[![Deploy with Vercel Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/arpitbatra123/komura-api)
 
 ## Built with
 
 - [vercel now](https://vercel.com/)
-- blood, sweat and tears (not the BTS album)
+- blood, sweat and tears (not the BTS album, and not actual blood sweat and tears either, so nothing)
