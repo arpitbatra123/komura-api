@@ -7,7 +7,7 @@ module.exports = {
     try {
       const key = process.env.goodreads_key;
       const goodreadsResponseXML = await got(
-        `https://www.goodreads.com/review/list/92378107.xml?key=${key}&v=2&shelf=read`
+        `https://www.goodreads.com/review/list/92378107.xml?key=${key}&v=2&shelf=read&sort=date_read`
       );
 
       goodreadsResponseJSON = convert.xml2json(goodreadsResponseXML.body, {
