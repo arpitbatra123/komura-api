@@ -1,33 +1,23 @@
-const convert = require('xml-js');
-const got = require('got');
+const Parser = require('rss-parser');
 const striptags = require('striptags');
 
 module.exports = {
-  getReviews: async (userId) => {
+  getReviews: async (feedUrl) => {
     try {
-      const key = process.env.goodreads_key;
-      const goodreadsResponseXML = await got(
-        `https://www.goodreads.com/review/list/${userId}.xml?key=${key}&v=2&shelf=read&sort=date_read`
-      );
+      const parser = new Parser();
 
-      goodreadsResponseJSON = convert.xml2json(goodreadsResponseXML.body, {
-        compact: true
-      });
+      let feed = await parser.parseURL(feedUrl);
 
-      const reviews = JSON.parse(goodreadsResponseJSON).GoodreadsResponse.reviews.review;
-
-      const bookDetails = reviews.map((review) => {
+      const bookDetails = feed.items.map((review) => {
         return {
           book: {
-            title: review.book.title._text,
-            isbn: review.book.isbn13._text,
-            link: review.book.link._text,
+            title: review.title,
+            photoUrl: review.content.split('\n')[2],
+            link: review.link
           },
           review: {
-            body: striptags(review.body._cdata, '<br>'),
-            url: review.url._text,
-            rating: review.rating._text,
-            date_read: review.read_at._text
+            body: striptags(review.content.split('\n')[11], [], '\n').split('review:')[1].trim(),
+            date_read: review.pubDate
           }
         };
       });
