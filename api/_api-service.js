@@ -3,11 +3,11 @@ const got = require('got');
 const striptags = require('striptags');
 
 module.exports = {
-  getReviews: async () => {
+  getReviews: async (userId) => {
     try {
       const key = process.env.goodreads_key;
       const goodreadsResponseXML = await got(
-        `https://www.goodreads.com/review/list/92378107.xml?key=${key}&v=2&shelf=read&sort=date_read`
+        `https://www.goodreads.com/review/list/${userId}.xml?key=${key}&v=2&shelf=read&sort=date_read`
       );
 
       goodreadsResponseJSON = convert.xml2json(goodreadsResponseXML.body, {
